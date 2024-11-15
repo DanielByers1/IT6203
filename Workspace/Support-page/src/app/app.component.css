@@ -1,0 +1,21 @@
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.ticket-form, .ticket-list {
+  margin: 20px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.list-group-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}

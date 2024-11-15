@@ -1,0 +1,33 @@
+<div class="packing-list">
+  <div class="recommendations">
+    <div class="recommended-items">
+      <h2>Recommended Items:</h2>
+      <ul>
+        <li *ngFor="let item of recommendedItems">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="weather-based-items">
+    <h2>Weather-Based Items (UK):</h2>
+    <ul>
+      <li *ngFor="let item of weatherBasedItems">{{ item }}</li>
+    </ul>
+  </div>
+
+  <h2>Additional Documents:</h2>
+  <input type="text" [(ngModel)]="newEssentialItem" placeholder="Add document" />
+  <button (click)="addEssentialItem()">Add</button>
+
+  <ul>
+    <li *ngFor="let document of essentialDocuments; let i = index">
+      <span *ngIf="editingIndex !== i">{{ document.item }}</span>
+      <input *ngIf="editingIndex === i" [(ngModel)]="editingItem" />
+
+      <button (click)="removeEssentialItem(i)" style="color: red;">Remove</button>
+      
+      <button *ngIf="editingIndex !== i" (click)="startEditing(i)" style="color: blue;">Update</button>
+      <button *ngIf="editingIndex === i" (click)="saveEdit(i)" style="color: green;">Save</button>
+    </li>
+  </ul>
+</div>

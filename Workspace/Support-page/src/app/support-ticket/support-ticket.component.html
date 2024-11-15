@@ -1,0 +1,28 @@
+<div class="faq-section">
+  <h2>Frequently Asked Questions (FAQ)</h2>
+  <ul>
+    <li><strong>Q: How do I create a support ticket?</strong>...</li>
+  </ul>
+</div>
+
+<div class="ticket-form">
+  <h2>Create Ticket</h2>
+  <form [formGroup]="ticketForm" (ngSubmit)="submitTicket()">
+    <input type="text" formControlName="name" placeholder="Name" required />
+    <input type="email" formControlName="email" placeholder="Email" required />
+    <textarea formControlName="issue" placeholder="Issue" required></textarea>
+    <button type="submit">{{ editingTicket ? 'Update Ticket' : 'Submit Ticket' }}</button>
+    <button type="button" (click)="resetForm()">Cancel</button>
+  </form>
+</div>
+
+<h2>Current Tickets</h2>
+<ul class="ticket-list">
+  <li *ngFor="let ticket of tickets" class="ticket-list-item">
+    <span>{{ ticket.name }} ({{ ticket.email }})</span><br />
+    <span>{{ ticket.issue }}</span><br />
+    <span>{{ ticket.date | date: 'short' }}</span>
+    <button (click)="editTicket(ticket)">Edit Ticket</button>
+    <button (click)="ticket._id ? deleteTicket(ticket._id) : null">Delete</button>
+  </li>
+</ul>

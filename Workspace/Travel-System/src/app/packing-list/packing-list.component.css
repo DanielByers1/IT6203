@@ -1,0 +1,30 @@
+button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white !important; 
+  background-color: #6a0dad; 
+  border: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #5b0099; 
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.remove-button {
+  background-color: #6a0dad; 
+  color: white !important; 
+}
+
+button.update-button {
+  background-color: #6a0dad; 
+  color: white !important; 
+}

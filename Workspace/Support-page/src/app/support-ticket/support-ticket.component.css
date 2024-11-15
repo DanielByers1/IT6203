@@ -1,0 +1,19 @@
+.container {
+    padding: 20px;
+  }
+  
+  .faq-section,
+  .ticket-form {
+    margin-bottom: 20px;
+  }
+  
+  .ticket-list-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    margin-right: 5px;
+  }
+  

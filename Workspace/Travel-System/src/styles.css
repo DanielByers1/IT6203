@@ -1,0 +1,115 @@
+/* Navigation Bar */
+#navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0; 
+    background-color: #6d3288;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; 
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+  }
+  
+  #navigation ul {
+    padding: 0;
+  }
+  
+  #navigation li {
+    list-style-type: none;
+  }
+  
+  #navigation a {
+    padding: 16px;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    width: 100%; 
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+  }
+  
+  #navigation a:hover {
+    background-color: #8e6c9e;
+  }
+  
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  .main-content h1 {
+    color: #491f5c;
+    font-family: Garamond, Georgia, serif;
+    font-size: 48px; 
+    text-align: center;
+    margin-top: 0;
+  }  
+  
+  .recommendations {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .recommended-items, .weather-based-items {
+    width: 45%;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+
+  
+
+  .recommendations {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 48px;
+  }
+  
+  
+  .recommended-items, .weather-based-items {
+    width: 45%; 
+  }
+  
+  .recommended-items ul, .weather-based-items ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recommended-items li, .weather-based-items li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+  }
+  
